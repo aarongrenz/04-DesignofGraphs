@@ -291,7 +291,7 @@ grid.arrange(bars0,bars7,ncol=2)
 ---
 ## Lie factor of 14.8
 
-<img src="images/liefactorhighway.jpg">
+<img src="images/liefactorhighway.png">
 
 ---
 
@@ -303,13 +303,13 @@ grid.arrange(bars0,bars7,ncol=2)
 
 ## Lie factor of 2.8 (plus other issues)
 
-<img src="images/lieshrinkingdoctor.jpg">
+<img src="images/lieshrinkingdoctor.png">
 
 ---
 
 ## Using multiple dimensions to depict one dimensional change
 
-<img src="images/lieshrinkingdollar.jpg">
+<img src="images/lieshrinkingdollar.png">
    
 Surface area of 1978 dollar should've been twice as big as shown to reflect purchasing power change
 
@@ -317,7 +317,7 @@ Surface area of 1978 dollar should've been twice as big as shown to reflect purc
 
 ## Time frame deception
 
-<img src="images/timeframegap.jpeg">
+<img src="images/timeframegap.png">
 
 ---
 

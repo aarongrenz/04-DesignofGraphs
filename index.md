@@ -125,7 +125,7 @@ Collections of mini figures arranged to portray a single animated figure (e.g.,G
 ## Sparklines - Word-sized graphics - Example, change in population of Austria (1981-2009)
 
 <!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
-<!-- Tue Sep 23 16:29:13 2014 -->
+<!-- Tue Sep 23 16:35:20 2014 -->
 <table border=1>
 <tr> <th>  </th> <th> Mean </th> <th> Boxplot </th> <th> LinePlot </th> <th> BarPlot </th> <th> Current value </th>  </tr>
   <tr> <td align="right"> Total </td> <td> 7884750.66 </td> <td> <img src="out12-1.png"> </td> <td> <img src="out13-1.png"> </td> <td> <img src="out14-1.png"> </td> <td> 8355260 </td> </tr>
@@ -159,7 +159,7 @@ Collections of mini figures arranged to portray a single animated figure (e.g.,G
 ---
 ## Lie factor of 14.8
 
-<img src="images/liefactorhighway.jpg">
+<img src="images/liefactorhighway.png">
 
 ---
 
@@ -171,13 +171,13 @@ Collections of mini figures arranged to portray a single animated figure (e.g.,G
 
 ## Lie factor of 2.8 (plus other issues)
 
-<img src="images/lieshrinkingdoctor.jpg">
+<img src="images/lieshrinkingdoctor.png">
 
 ---
 
 ## Using multiple dimensions to depict one dimensional change
 
-<img src="images/lieshrinkingdollar.jpg">
+<img src="images/lieshrinkingdollar.png">
    
 Surface area of 1978 dollar should've been twice as big as shown to reflect purchasing power change
 
@@ -185,7 +185,7 @@ Surface area of 1978 dollar should've been twice as big as shown to reflect purc
 
 ## Time frame deception
 
-<img src="images/timeframegap.jpeg">
+<img src="images/timeframegap.png">
 
 ---
 
