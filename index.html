@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design of Graphs</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Design of Graphs">
+  <meta name="author" content="Vivek Patil, Ph.D.">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/mycustom.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Design of Graphs</h1>
+    <h2></h2>
+    <p>Vivek Patil, Ph.D.<br/>Associate Professor of Marketing</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Graphs versus Tables</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Graphs for richer, more complex and more difficult statistical material. Show comparisons/relationships.</li>
+<li>If data can be summarized in one or two numbers, use numbers.</li>
+<li>Small, noncomparative, highly labeled datasets in tables.</li>
+<li>If datasets have 20 numbers or fewer, use tables</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Aesthetics and Technique</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Graphical elegance is often found in simplicity of design and complexity of data</p>
+
+<ul>
+<li>Avoid sentence when having more than two numbers</li>
+<li>Tables are best to show exact numerical values.</li>
+<li>Pie-charts are dumb, series of them are dumber - never use them</li>
+<li>A supertable that permits many comparisons may be better than a series of little bar charts - Always?</li>
+<li>Mix words with graphics and tables. They have a single purpose - presentation of information.</li>
+<li>Avoid &quot;See figure x&quot;. </li>
+<li>Purpose of graphic - in exploratory data analysis, words should tell viewer how to read the design and not what to read in terms of content. (Other purposes could be description, tabulation, or decoration)</li>
+<li>Proportion and scale<br>
+
+<ul>
+<li>line weight and lettering</li>
+<li>shape (tend towards horizontal) (1:1.4-1:1.8)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Maximize Data-Ink Ratio</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>data-ink: Non-erasable core of a graphic</li>
+<li>non-data ink: erasable components of a graphic (e.g., axis lines, tick marks, labels...)</li>
+<li>data-ink ratio = (data-ink/total-ink)=(1-proportion of graphic that can be erased without loss of data-information)</li>
+</ul>
+
+<p>For non-data-ink, less is more; For data-ink, less is a bore (Tufte credits Ludwig Mies van der Rohe and Robert Venturi)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Improving data-ink by emphasizing data?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Background? White versus grey or any other color?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-2.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Gridlines?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-3.png" alt="plot of chunk unnamed-chunk-3"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Framing</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-4.png" alt="plot of chunk unnamed-chunk-4"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Box plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-5.png" alt="plot of chunk unnamed-chunk-5"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Scatter plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-6.png" alt="plot of chunk unnamed-chunk-6"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Dot-dash plot + box-plots + means = Dot-dash-mean-box plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Mean in blue and median in red</p>
+
+<p><img src="assets/fig/unnamed-chunk-7.png" alt="plot of chunk unnamed-chunk-7"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Dot-Dot Mean Box-plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-8.png" alt="plot of chunk unnamed-chunk-8"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Dot-Dotplots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-9.png" alt="plot of chunk unnamed-chunk-9"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Bar plots (dummy data)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-10.png" alt="plot of chunk unnamed-chunk-10"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Multifunctioning Graphical Elements</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Mobilize every graphical element to show the data - can lead to complexity
+<img src="assets/fig/unnamed-chunk-11.png" alt="plot of chunk unnamed-chunk-11"> </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Slopegraph</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-12.png" alt="plot of chunk unnamed-chunk-12"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>High Data Density plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>data density = number of entries in data array/area of data graphic
+<img src="images/nyweather.jpg" width=900 height=500> <br>
+300 numbers per square inch</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Small Multiples</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Collections of mini figures arranged to portray a single animated figure (e.g.,Gelman&#39;s voucher map) <br>
+<img src="images/gelmanvouchermap.png" width=800 height=575></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Sparklines - Word-sized graphics - Example, change in population of Austria (1981-2009)</h2>
+  </hgroup>
+  <article data-timings="">
+    <!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
+
+<!-- Tue Sep 23 10:42:17 2014 -->
+
+<table border=1>
+<tr> <th>  </th> <th> Mean </th> <th> Boxplot </th> <th> LinePlot </th> <th> BarPlot </th> <th> Current value </th>  </tr>
+  <tr> <td align="right"> Total </td> <td> 7884750.66 </td> <td> <img src="out12-1.png"> </td> <td> <img src="out13-1.png"> </td> <td> <img src="out14-1.png"> </td> <td> 8355260 </td> </tr>
+  <tr> <td align="right"> Men </td> <td> 3791573.55 </td> <td> <img src="out12-2.png"> </td> <td> <img src="out13-2.png"> </td> <td> <img src="out14-2.png"> </td> <td> 4068047 </td> </tr>
+  <tr> <td align="right"> Women </td> <td> 4093177.1 </td> <td> <img src="out12-3.png"> </td> <td> <img src="out13-3.png"> </td> <td> <img src="out14-3.png"> </td> <td> 4287213 </td> </tr>
+  <tr> <td align="right"> Men per 1000 Women </td> <td> 925.97 </td> <td> <img src="out12-4.png"> </td> <td> <img src="out13-4.png"> </td> <td> <img src="out14-4.png"> </td> <td> 949 </td> </tr>
+  <tr> <td align="right"> Age 0-19 </td> <td> 1899456.83 </td> <td> <img src="out12-5.png"> </td> <td> <img src="out13-5.png"> </td> <td> <img src="out14-5.png"> </td> <td> 1763948 </td> </tr>
+  <tr> <td align="right"> Age 20-64 </td> <td> 4778240 </td> <td> <img src="out12-6.png"> </td> <td> <img src="out13-6.png"> </td> <td> <img src="out14-6.png"> </td> <td> 5140425 </td> </tr>
+  <tr> <td align="right"> Age 65+ </td> <td> 1207053.83 </td> <td> <img src="out12-7.png"> </td> <td> <img src="out13-7.png"> </td> <td> <img src="out14-7.png"> </td> <td> 1450887 </td> </tr>
+  <tr> <td align="right"> Age 75+ </td> <td> 541649.59 </td> <td> <img src="out12-8.png"> </td> <td> <img src="out13-8.png"> </td> <td> <img src="out14-8.png"> </td> <td> 665415 </td> </tr>
+   </table>
+
+<!-- .html was created.-->
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Deception in Graphs</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Truth telling - bars with a zero base</li>
+<li>Comparison of equal time frames (4 quarters in a year versus 2 quarters in another year)</li>
+<li>Distortion of graphic: Visual representation of data not consistent with numerical representation of data 
+
+<ul>
+<li>lie factor = size of effect shown in graphic /size of effect in data; .95-1.5 good, 1, best.</li>
+</ul></li>
+<li>Show variations in data and do not introduce variations in design of chart (3D needed?)</li>
+<li>In time series displays of money, use deflated and standardized units of monetary measurements over nominal units.</li>
+<li>Distortion by using areas to show one-dimensional data - (a) ambiguities in perception of 2D surfaces to convert to a one-D number; (b) changes in physical areas do not produce proportional changes in perceived areas. The number of information-carrying dimensions (variables) in graphics should not exceed number of dimensions in data.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Deception: Zero Base in Bar Charts</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-14.png" alt="plot of chunk unnamed-chunk-14"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Lie factor of 14.8</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/liefactorhighway.jpg"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Lie factor of 9.4</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/crudeoilpicture.png"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Lie factor of 2.8 (plus other issues)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/lieshrinkingdoctor.jpg"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Using multiple dimensions to depict one dimensional change</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/lieshrinkingdollar.jpg"></p>
+
+<p>Surface area of 1978 dollar should&#39;ve been twice as big as shown to reflect purchasing power change</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Time frame deception</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/timeframegap.jpeg"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Chartjunk</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Vibration and movement in optics: Design interactions with physiological tremor of eye</p>
+
+<ul>
+<li>Use shades of gray when color fills not advisable</li>
+<li>label with words than create cross-hatched designs</li>
+</ul></li>
+<li><p>Gridlines: None versus shades of grey?</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Categorical Variable ---Use fills!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-15.png" alt="plot of chunk unnamed-chunk-15"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Avoid</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/avoid/GifAnimation.gif"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Acknowledgement for images, content used in the presentation, and code for presentation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a href="https://github.com/patilv/04-DesignofGraphs">https://github.com/patilv/04-DesignofGraphs</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Graphs versus Tables'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Aesthetics and Technique'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Maximize Data-Ink Ratio'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Improving data-ink by emphasizing data?'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Background? White versus grey or any other color?'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Gridlines?'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Framing'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Box plot'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Scatter plots'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Dot-dash plot + box-plots + means = Dot-dash-mean-box plots'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Dot-Dot Mean Box-plots'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Dot-Dotplots'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Bar plots (dummy data)'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Multifunctioning Graphical Elements'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Slopegraph'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='High Data Density plots'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Small Multiples'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Sparklines - Word-sized graphics - Example, change in population of Austria (1981-2009)'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Deception in Graphs'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Deception: Zero Base in Bar Charts'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Lie factor of 14.8'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Lie factor of 9.4'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Lie factor of 2.8 (plus other issues)'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Using multiple dimensions to depict one dimensional change'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Time frame deception'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Chartjunk'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Categorical Variable ---Use fills!'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Avoid'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Acknowledgement for images, content used in the presentation, and code for presentation'>
+         29
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
